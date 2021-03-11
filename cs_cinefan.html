@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Seitz - Portfolio</title>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="img/webseitz-favicon.ico"
+      type="image/icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <!-- Header -->
+      <!-- Add logo here -->
+      <img src="img/logo.png" alt="logo" class="page-header__item" />
+      <nav class="navigation-list page-header__item">
+        <ul role="menubar" class="page-header__item">
+          <li role="presentation" class="navigation-list">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Portfolio</a
+            >
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <section>
+      <h1>Case Study for Full-Stack Demonstration Project: CineFan</h1>
+      <div class="cs_intro">
+          <h2>Overview</h2>
+          <img
+            src="img/CineFan_images/CineFan_main.png"
+            class="cs_introImage"
+            alt="CineFan Main Page"
+          />
+          <p>
+            CineFan is a web app which I developed using the MERN stack. It
+            provides registered users with an array of movies and access to
+            information about their directors, genres, and a brief description.
+            Users must register in order to access this content. Once they have
+            done so, users can update their own personal information and create
+            a list of favourite movies to be stored in their account.
+          </p>
+          <h2>Context</h2>
+          <p>
+            I created CineFan as part of my training in full-stack web
+            development with CareerFoundry. This project was specifically part
+            of the Client-Side Programming & React module.
+          </p>
+          <h2>Objective</h2>
+          <p>
+            The purpose of this project was to hone and ultimately demonstrate
+            my skill with both front- and back-end development. The goal was to
+            create a complete server-side and client-side application from
+            scratch.
+          </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="cs_process">
+        <h2>The Build Process</h2>
+        <img
+            src="img/CineFan_images/CineFan_db.png"
+            class="cs_processImage"
+            alt="CineFan Database Sample"
+          /> 
+        <h3>Back-End</h3>
+        <p>
+          The server-side consists of a REST API, built using Node.js and
+          Express. This interacts with MongoDB, a non-relational database. The
+          API is accessed via HTTP methods, such as GET and POST, in order to
+          keep interactions with it straightforward. These follow a CRUD method
+          to update, retrieve, and store data. When required, information is
+          provided by the API in JSON format.
+        </p>
+        <p>
+          The API endpoints were tested using Postman. Once these initial tests
+          passed, I added user authentication and authorization using basic HTTP
+          and JWT authentication. The endpoints can be viewed here:
+          <br />
+          <a href="#">View API endpoints</a>
+        </p>
+        <h2>Front-End</h2>
+        <p>
+          The front-end portion of the application was built using React and
+          React-Redux as a responsive, single-page application. It consists of
+          multiple views, including a main view, which displays all movies in a
+          grid format, a movie view, which displays information about an
+          individual movie (and which is also used to display information about
+          directors and genres), and a profile view, where users can view or
+          edit their information and see their list of favourites.
+        </p>
+      </div>
+      <div class="cs_grid">
+        <div class="cs_grid__item">
+          <img
+            class="cs_frontEnd-img"
+            src="img/CineFan_images/CineFan_movie.png"
+            alt="CineFan Movie View"
+          /> 
+        </div>
+        <div class="cs_grid__item">
+          <img
+            class="cs_frontEnd-img"
+            src="img/CineFan_images/CineFan_director.png"
+            alt="CineFan Movie View"
+          /> 
+        </div>
+        <div class="cs_grid__item">
+          <img
+            class="cs_frontEnd-img"
+            src="img/CineFan_images/CineFan_profile.png"
+            alt="CineFan Movie View"
+          /> 
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cs_conclusion">
+        <h2>Challenges</h2>
+        <p>
+          Whilst I loved working on this project, there were several challenges encountered along the way. Firstly, it took me some time to wrap my head around React. I did eventually come to understand through discussions with my mentor, tutor, and discovering additional practical examples.
+        </p>
+        <p>
+          Unfortunately, I also encountered several problems with the actual hosting of the front-end component. I initially wanted to use Netlify to host the app, but due to an error on Netlify’s end I was unable to do so. Rather than waste time waiting for them to address the problem, I switched to Heroku for my hosting service. This came with its own challenges, as Heroku didn’t recognize the app’s file naming convention at first. With the help of my mentor, I rebuilt the front-end of the app and the Heroku project to better integrate the two. I also combined the front- and back-end repositories on GitHub into a single repo.
+        </p>
+        <h2>Duration</h2>
+        <p>
+          The development of this app took a bit longer than expected, due to my initial difficulty in understanding React. Once I got more up to speed with React, however, I encountered the hosting challenges described above. All told, the complete development of this app took about twice as long as I was expecting it to.
+        </p>
+        <h2>Credits</h2>
+        <p>
+          <span class="cs_label">Lead Developer:</span> David Seitz
+          <br/>
+          <span class="cs_label">Mentor:</span> Sammy Khaleel
+          <br/>
+          <span class="cs_label">Tutor:</span> Gurpreet Kooner
+        </p>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <!-- Footer -->
+      <p>You can find me on:</p>
+      <div class="social-media">
+        <a
+          href="https://github.com/djoseitz"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/github-logo.svg" alt="Github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/davidjoseitz/"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/linkedin-logo.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+
+    <!-- Tota11y
+	<script src="js/tota11y.min.js"></script>
+	-->
+  </body>
+</html>
