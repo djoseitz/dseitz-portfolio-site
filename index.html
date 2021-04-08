@@ -1,77 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Web Seitz</title>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="img/webseitz-favicon.ico"
+      type="image/icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <title>Web Seitz</title>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="img/webseitz-favicon.ico" type="image/icon">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-  <header class="page-header">
-    <!-- Header -->
-    <!-- Add logo here -->
-    <img src="img/logo.png" alt="logo" class="page-header__item">
-    <nav class="navigation-list page-header__item">
-      <ul role="menubar" class="page-header__item">
-        <li role="presentation" class="navigation-list">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation" class="navigation-list">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About
-            Me</a>
-        </li>
-        <li role="presentation" class="navigation-list">
+  <body>
+    <header class="page-header">
+      <!-- Header -->
+      <!-- Add logo here -->
+      <img src="img/logo.png" alt="logo" class="page-header__item" />
+      <nav class="navigation-list page-header__item">
+        <ul role="menubar" class="page-header__item">
+          <li role="presentation" class="navigation-list">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <!-- <li role="presentation" class="navigation-list">
           <a href="work.html" role="menuitem" class="navigation-list__item">Portfolio</a>
-        </li>
-        <li role="presentation" class="navigation-list">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </li> -->
+          <li role="presentation" class="navigation-list">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="profile">
-    <!-- Main content -->
-    <!-- Portrait image here -->
-    <img src="img/dseitz_headshot.jpg" class="profile__portrait" alt="Dave Seitz headshot">
-    <h1>Hi there!</h1>
+    <div class="profile">
+      <!-- Main content -->
+      <h1>David J.O. Seitz</h1>
 
-    <!-- Default links and buttons
+      <!-- Default links and buttons
 			<a href="#">Default Link</a>
 			<button type="button">Default Button</button>
 			<button class="button__secondary">Secondary Button</button>
 			-->
 
-    <p class="profile__text">My name is Dave Seitz, and I am an aspiring <span>web
-        developer</span> from Canada.</p>
-    <a href="work.html">Take a look at what I can do</a>
-  </div>
-  <footer class="page-footer">
-    <!-- Footer -->
-    <p>You can find me on:</p>
-    <div class="social-media">
-      <a href="https://github.com/djoseitz" target="_blank" class="social-media__link">
-        <img src="img/github-logo.svg" alt="Github">
-      </a>
-      <!--
-				<a href="https://twitter.com/" target="_blank" class="social-media__link">
-					<img src="img/twitter-logo.svg" alt="Twitter">
-        </a>
-      -->
-      <a href="https://www.linkedin.com/in/davidjoseitz/" target="_blank" class="social-media__link">
-        <img src="img/linkedin-logo.svg" alt="LinkedIn">
-      </a>
+      <p class="profile__text">
+        I am a
+        <span>full-stack web developer</span> living in British Columbia,
+        Canada. I'm all about building useful tools to make the web (and the
+        world!) a more interesting and user-friendly place.
+      </p>
+      <a href="about.html">Learn a bit more about me</a>
     </div>
-  </footer>
-  <!-- Tota11y
-		<script src="js/tota11y.min.js"></script>
-		-->
-</body>
+    <!-- Projects -->
+    <h1>Check out my previous projects</h1>
+    <div class="grid">
+      <!-- Grid items will live here -->
+      <div class="grid__item">
+        <h2>JavaScript App (Pok&eacute;dex)</h2>
+        <img
+          src="img/pokedex.png"
+          class="project_image"
+          alt="Pokedex project screenshot"
+        />
+        <p>
+          The Pok&eacute;dex is a database used in the Pok&eacute;mon video
+          games. It displays an image of each Pok&eacute;mon, along with some
+          relevant data about them. I was responsible for building the front end
+          of this app, which pulls from an external database.
+        </p>
+        <p>
+          <a href="https://djoseitz.github.io/pokedex/" target="_blank"
+            >View the full project</a
+          >
+          <br />
+          or
+          <br />
+          <a href="https://github.com/djoseitz/pokedex" target="_blank"
+            >See the project on GitHub</a
+          >
+        </p>
+      </div>
+      <div class="grid__item">
+        <h2>CineFan Movie App</h2>
+        <img
+          src="img/CineFan_images/CineFan_main.png"
+          class="project_image"
+          alt="CineFan project screenshot"
+        />
+        <p>
+          CineFan is a web app for displaying information about various movies,
+          as well as their directors and genres. I was responsible for
+          developing both the server-side and client-side of the project, which
+          was accomplished using the MERN stack.
+        </p>
+        <a href="cs_cinefan.html">Read the Case Study</a>
+        <br />
+        <a href="https://cinefandb.herokuapp.com/client/"
+          >View the full project as hosted on Heroku</a
+        >
+        <br />
+        or
+        <br />
+        or
+        <br />
+        <a href="https://github.com/djoseitz/CineFan-client"
+          >See the project on GitHub</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>MeetApp Event Browser</h2>
+        <p>
+          MeetApp is a Progressive Web App designed to allow users to search for
+          events in cities around the world. It also displays the events in
+          multiple chart formats, which were implemented using Recharts.
+        </p>
+        <a href="https://djoseitz.github.io/meet/">View the full project</a>
+        <br />
+        or
+        <br />
+        <a href="https://github.com/djoseitz/meet">See the project on GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>To-Do List</h2>
+        <p>
+          The classic JavaScript To-Do List app, fully functional and ready for
+          use. Who doesn't need a to-do list?
+        </p>
+        <a href="https://djoseitz.github.io/to-do-list-app/"
+          >View the full project</a
+        >
+        or
+        <br />
+        <a href="https://github.com/djoseitz/to-do-list-app"
+          >See the project on GitHub</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Web App</h2>
+        <p>
+          Within this project, I was responsible for the frontend and backend.
+          It’s written in React.js. Additionally, I've created the HTML and CSS
+          templates.
+        </p>
+        <a href="#">See project on GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>Your Project!</h2>
+        <p>
+          I'm excited to see what new and interesting ideas you have for your
+          project. I'm confident we can build something great together.
+        </p>
+        <a href="contact.html">Contact me</a>
+      </div>
+    </div>
 
+    <footer class="page-footer">
+      <!-- Footer -->
+      <p>You can find me on:</p>
+      <div class="social-media">
+        <a
+          href="https://github.com/djoseitz"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/github-logo.svg" alt="Github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/davidjoseitz/"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/linkedin-logo.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+    <!-- Tota11y
+		<script src="js/tota11y.min.js"></script>
+		--></body>
 </html>
