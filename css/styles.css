@@ -265,6 +265,35 @@ table {
   border-color: #00587a;
 }
 
+.project_image_row {
+  display: flex;
+  align-items: center;
+}
+
+.project_image_left {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #00587a;
+  height: 195px;
+  width: auto;
+}
+
+.project_image_right {
+  width: 50%;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #00587a;
+  height: 195px;
+  width: auto;
+}
+
 .cs_intro {
   display: inline-block;
   float: left;
