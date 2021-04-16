@@ -1,77 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Web Seitz</title>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="img/webseitz-favicon.ico"
+      type="image/icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <title>Web Seitz</title>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="img/webseitz-favicon.ico" type="image/icon">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-  <header class="page-header">
-    <!-- Header -->
-    <!-- Add logo here -->
-    <img src="img/logo.png" alt="logo" class="page-header__item">
-    <nav class="navigation-list page-header__item">
-      <ul role="menubar" class="page-header__item">
-        <li role="presentation" class="navigation-list">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation" class="navigation-list">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About
-            Me</a>
-        </li>
-        <li role="presentation" class="navigation-list">
+  <body>
+    <header class="page-header">
+      <!-- Header -->
+      <img src="img/logo.png" alt="logo" class="page-header__item" />
+      <nav class="navigation-list page-header__item">
+        <ul role="menubar" class="page-header__item">
+          <li role="presentation" class="navigation-list">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <!-- <li role="presentation" class="navigation-list">
           <a href="work.html" role="menuitem" class="navigation-list__item">Portfolio</a>
-        </li>
-        <li role="presentation" class="navigation-list">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </li> -->
+          <li role="presentation" class="navigation-list">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="profile">
-    <!-- Main content -->
-    <!-- Portrait image here -->
-    <img src="img/dseitz_headshot.jpg" class="profile__portrait" alt="Dave Seitz headshot">
-    <h1>Hi there!</h1>
+    <div class="profile">
+      <!-- Main content -->
+      <h2>Full-Stack Web Developer</h2>
+      <h1 class="profile__name">David J.O. Seitz</h1>
 
-    <!-- Default links and buttons
+      <!-- Default links and buttons
 			<a href="#">Default Link</a>
 			<button type="button">Default Button</button>
 			<button class="button__secondary">Secondary Button</button>
 			-->
 
-    <p class="profile__text">My name is Dave Seitz, and I am an aspiring <span>web
-        developer</span> from Canada.</p>
-    <a href="work.html">Take a look at what I can do</a>
-  </div>
-  <footer class="page-footer">
-    <!-- Footer -->
-    <p>You can find me on:</p>
-    <div class="social-media">
-      <a href="https://github.com/djoseitz" target="_blank" class="social-media__link">
-        <img src="img/github-logo.svg" alt="Github">
-      </a>
-      <!--
-				<a href="https://twitter.com/" target="_blank" class="social-media__link">
-					<img src="img/twitter-logo.svg" alt="Twitter">
-        </a>
-      -->
-      <a href="https://www.linkedin.com/in/davidjoseitz/" target="_blank" class="social-media__link">
-        <img src="img/linkedin-logo.svg" alt="LinkedIn">
-      </a>
+      <p class="profile__text">
+        I'm a Full-Stack Web Developer with past experience in customer success and project management.
+        <br/>
+        I'm all about building useful tools to make the web (and the world!) a more interesting and accessible place.
+      </p>
+      <a href="about.html">Learn a bit more about me</a>
     </div>
-  </footer>
-  <!-- Tota11y
-		<script src="js/tota11y.min.js"></script>
-		-->
-</body>
+    <!-- Projects -->
+    <h1 class="portfolio__title">Check out my previous projects</h1>
+    <div class="grid">
+      <!-- Grid items will live here -->
+      <div class="grid__item">
+        <h2>CineFan Movie App</h2>
+        <img src="img/CineFan_images/CineFan_main.png" class="project_image" alt="CineFan project screenshot">
+        <p>
+          CineFan is a web app for displaying information about various movies, as well as their directors and genres. I was responsible for developing both the server-side and client-side of the project, which was accomplished using the MERN stack.
+        </p>
+        <a href="cs_cinefan.html">Case Study</a>
+        <br />
+        <a href="https://cinefandb.herokuapp.com/client/">View Project</a>
+        <br />
+        <a href="https://github.com/djoseitz/CineFan-client">GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>MeetApp Event Browser</h2>
+        <img src="img/meetapp.png" class="project_image" alt="MeetApp project screenshot">
+        <p>
+          MeetApp is a serverless Progressive Web App designed to allow users to search for events in cities around the world. It also displays the events in multiple chart formats It was written with React and Jest, and implemented according to Cucumber TDD practices. The charts were implemented with the Recharts library.
+        </p>
+        <a href="https://djoseitz.github.io/meet/">View Project</a>
+        <br />
+        <a href="https://github.com/djoseitz/meet">GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>Chatterbox</h2>
+        <div class="project_image_row">
+          <img src="img/chatterbox-1.png" class="project_image_left" alt="To-Do List project screenshot">
+          <img src="img/chatterbox-2.png" class="project_image_right" alt="To-Do List project screenshot">
+        </div>
+        <p>
+          Chatterbox is a mobile messaging app which allows users to customize their interface, send text, pictures, and video, and even their current location! It's compatible with both iOS and Android devices. It was written using React Native and Expo.
+        </p>
+        <a href="https://github.com/djoseitz/chat-app">GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>Pok&eacute;dex</h2>
+        <img src="img/pokedex.png" class="project_image" alt="Pokedex project screenshot">
+        <p>
+          This app displays a list of creatures from the Pok&eacute;mon video games. Each entry can be opened up to view more data and an image of the Pok&eacute;mon itself. It was written using JavaScript and pulls from an external database.
+        </p>
+        <p>
+          <a href="https://djoseitz.github.io/pokedex/" target="_blank">View Project</a>
+          <br />
+          <a href="https://github.com/djoseitz/pokedex" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="grid__item">
+        <h2>To-Do List</h2>
+        <img src="img/to-do-list.png" class="project_image" alt="To-Do List project screenshot">
+        <p>
+          This is a classic To-Do List app, which allows the user to add, remove, and re-order items via a simple interface. It was written using JavaScript.
+        </p>
+        <a href="https://djoseitz.github.io/to-do-list-app/">View Project</a>
+        <br />
+        <a href="https://github.com/djoseitz/to-do-list-app">GitHub</a>
+      </div>
+      <div class="grid__item">
+        <h2>Your Project!</h2>
+        <p>
+          I'm excited to see what new and interesting ideas you have for your project. I'm confident we can build
+          something great together.
+        </p>
+        <a href="contact.html">Contact me</a>
+      </div>
+    </div>
 
+    <footer class="page-footer">
+      <!-- Footer -->
+      <p>You can find me on:</p>
+      <div class="social-media">
+        <a
+          href="https://github.com/djoseitz"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/github-logo.svg" alt="Github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/davidjoseitz/"
+          target="_blank"
+          class="social-media__link"
+        >
+          <img src="img/linkedin-logo.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+    <!-- Tota11y
+		<script src="js/tota11y.min.js"></script>
+		--></body>
 </html>
