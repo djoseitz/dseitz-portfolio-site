@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -56,14 +56,23 @@
       You can also <a href="tel:+16043142545">call me</a> at (604) 314 - 2545.
     </p>
     <form action="" method="post" class="contact-form">
-      <label class="standard-label" for="contact-email">E-mail: </label>
-      <input type="email" id="contact-email" required>
+      <p>
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <br/>
+        <input type="email" id="contact-email" required>
+      </p>
 
-      <label class="standard-label" for="contact-phone">Telephone: </label>
-      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx"" id=" contact-phone">
-      <label class="standard-label" for="contact-message">Message: </label>
-      <textarea maxlength="240" id="contact-message" required></textarea>
-      <input type="submit" value="Send message">
+      <p>
+        <label class="standard-label" for="contact-phone">Telephone: </label>
+        <br/>
+        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx"" id=" contact-phone">
+      </p>
+      <p>
+        <label class="standard-label" for="contact-message">Message: </label>
+        <br/>
+        <textarea maxlength="480" id="contact-message" required></textarea>
+      </p>
+      <input type="submit" class="button" value="Send message">
     </form>
   </div>
   <footer class="page-footer">

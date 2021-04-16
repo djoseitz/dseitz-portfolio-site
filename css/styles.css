@@ -147,7 +147,7 @@ button:focus,
 }
 
 .button:visited {
-  color: #edc655;
+  color: #e78203;
 }
 
 .profile__text {
@@ -163,6 +163,11 @@ button:focus,
 table {
   table-layout: fixed;
   border-spacing: 20px;
+}
+
+.portfolio__title {
+  text-align: center;
+  padding-top: 30px;
 }
 
 @keyframes color-change {
@@ -210,7 +215,7 @@ table {
 .contact {
   max-width: var(--content-width);
   margin: 0 auto;
-  text-align: justify;
+  text-align: center;
 }
 
 /* start grid fallback */
