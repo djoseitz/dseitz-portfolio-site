@@ -245,6 +245,7 @@ table {
     padding: 10px;
     border-radius: 25px;
     text-align: center;
+    box-shadow: 1px 1px 8px -4px #000;
   }
   .grid__item:last-child {
     grid-column: 3 / 3;
