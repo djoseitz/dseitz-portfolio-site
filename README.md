@@ -2,8 +2,8 @@
 
 ## Design Process
 
-I used Bootstrap for this portfolio website, as I knew that my portfolio will likely grow and change rapidly in a year, I wanted styling that could change quickly and responsively to new content inserted.
+As this was initially intended as a simple test of skills, I built this website from scratch using HTML, CSS, and JavaScript. I have since switched to a Bootstrap-based site, which is more flexible.
 
 ## Hosted on Heroku
 
-Hosted on Heroku, which has been my preferred free hosting platform, due to unreliability from Netlify.
+Hosted on Heroku, due to issues with Netlify at time of creation. Once these had been resolved, I had re-built this portfolio using a Bootstrap base.
